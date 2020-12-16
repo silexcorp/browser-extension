@@ -2,6 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
+
+    <!-- Prefetch non-authenticated API routes which client will need. !-->
+    <link rel="preload" as="fetch" href="https://hypothes.is/api/" crossorigin="anonymous">
+    <link rel="preload" as="fetch" href="https://hypothes.is/api/links" crossorigin="anonymous">
   </head>
   <body>
     <hypothesis-app></hypothesis-app>
